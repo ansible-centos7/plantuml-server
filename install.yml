@@ -1,0 +1,15 @@
+- hosts: all
+  become: true
+
+  vars_files:
+    - vars/defaults.yml
+
+  vars:
+    pip_install_packages:
+      - name: docker
+
+  roles:
+    - role: geerlingguy.repo-epel
+    - role: geerlingguy.pip
+    - role: geerlingguy.docker
+    - role: plantuml-server

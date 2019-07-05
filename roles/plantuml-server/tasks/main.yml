@@ -1,0 +1,7 @@
+- name: Start PlantUML server container
+  docker_container:
+    name: plantuml-server
+    image: plantuml/plantuml-server:jetty
+    state: started
+    ports:
+      - "{{ exposed_port }}:8080"

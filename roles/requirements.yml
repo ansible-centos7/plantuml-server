@@ -1,0 +1,4 @@
+---
+- geerlingguy.repo-epel
+- geerlingguy.pip
+- geerlingguy.docker
